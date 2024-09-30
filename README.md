@@ -29,7 +29,7 @@ python app.py
 <br>
 
 ## 데이터셋 정보
-이번 프로젝트에서는 보안 매뉴얼을 JSON 형식으로 변환한 후, Hugging Face에 `kingkim/DS_Building_SecurityManual_V5` (https://huggingface.co/datasets/kingkim/DS_Building_SecurityManual_V5)로 업로드한 데이터셋을 사용했습니다. 
+이번 프로젝트에서는 보안 매뉴얼을 JSON 형식으로 변환한 후, Hugging Face에 `kingkim/DS_Building_SecurityManual_V5` (https://huggingface.co/datasets/kingkim/DS_Building_SecurityManual_V5) 로 업로드한 데이터셋을 사용했습니다. 
 해당 데이터셋은 다음과 같은 과정을 통해 생성되었습니다:
 - PDF 파일을 랭체인과 ChatGPT API를 사용하여 질문-답변 형식의 JSON 데이터로 변환.
 - 데이터 증강 기법을 활용하여 200개의 질문-응답 구조로 구성된 데이터셋으로 확장.
@@ -38,7 +38,7 @@ python app.py
 <br>
 
 ## 모델 정보
-프로젝트에서 사용된 모델은 GPT-2 기반의 `kingkim/kodialogpt_v3.0_SecurityManual` (https://huggingface.co/kingkim/kodialogpt_v3.0_SecurityManual)입니다. 이 모델은 한국어 대화 데이터로 학습된 `heegyu/kodialogpt-v1` 모델을 기반으로 보안 매뉴얼에 맞춰 파인튜닝되었습니다. 
+프로젝트에서 사용된 모델은 GPT-2 기반의 `kingkim/kodialogpt_v3.0_SecurityManual` (https://huggingface.co/kingkim/kodialogpt_v3.0_SecurityManual) 입니다. 이 모델은 한국어 대화 데이터로 학습된 `heegyu/kodialogpt-v1` 모델을 기반으로 보안 매뉴얼에 맞춰 파인튜닝되었습니다. 
 모델의 학습 과정은 구글 코랩에서 진행되었으며, 주요 학습 파라미터는 다음과 같습니다:
 - 학습률: 0.0002
 - 배치 크기: 8
